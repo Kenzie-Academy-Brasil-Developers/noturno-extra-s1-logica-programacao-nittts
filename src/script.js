@@ -11,6 +11,8 @@ const calculateSalary = (salary,sales) => {
     return results
 }
 
+console.log(`calculateSalary : ${calculateSalary(1200,1500)}`)
+
 const calculateStock = (qtdAtual,max,min) => {
     const avg = (max + min) / 2
 
@@ -21,6 +23,8 @@ const calculateStock = (qtdAtual,max,min) => {
     return "Efetuar Compra"
 }   
 
+console.log(`calculateStock : ${calculateStock(2,6,3)}`)
+
 const calculateAge = (age) => {
     const month = age * 12
     const days = age * 365.25
@@ -28,6 +32,8 @@ const calculateAge = (age) => {
 
     return `Voce tem ${age} anos, ou ${month} meses, como tambem pode ser dito ${weeks} semanas, ou simplesmente ${days} dias de vida :)`
 }
+
+console.log(`calculateAge : ${calculateAge(18)}`)
 
 const getDiagonal = (matriz) => {
     let result = [];
@@ -39,6 +45,8 @@ const getDiagonal = (matriz) => {
 
     return result
 }
+
+console.log(`getDiagonal : ${getDiagonal([ [1, 2, 3] , [4, 5, 6] , [7, 8, 9] ])}`)
 
 const cashMachine = (money) => {
     let resultArr = [];
@@ -73,3 +81,5 @@ const cashMachine = (money) => {
     }
     return resultArr.join(", ")
 }
+
+console.log(`cashMachine : ${cashMachine(383)}`)
